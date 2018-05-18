@@ -1,0 +1,27 @@
+.errado {
+    border-color: red;
+}
+.correto {
+    border-color: green;
+}
+
+
+.jumbotron {
+    text-align: center;
+    background: darkcyan;
+}
+
+
+
+#preco {
+    color: darkgreen
+}
+
+#cpuid {
+    background: white
+}
+
+#start {
+    width:100%;
+    background: darkcyan;
+}

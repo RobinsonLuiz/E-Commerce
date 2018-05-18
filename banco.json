@@ -1,0 +1,34 @@
+{ 
+    "computadores": [
+        {
+            "nome" : "I5 Ultima Geração",
+            "descricao" : "um otimo computador",
+            "preco" : "2599.99",
+            "imagem" : "https://png.pngtree.com/element_origin_min_pic/16/11/06/dbfa0be721ef9c758a61b7b9f70312ab.jpg"
+        },
+        {
+            "nome" : "I7 Poderoso",
+            "descricao" : "um poderoso computador",
+            "preco" : "5500.90",
+            "imagem" : "https://lh3.googleusercontent.com/kSbnGi3s8azZ7nzEc_nsmM7UCEx2g_C7hiQ1pzcFBXHV5Un_W5XQ_xv6SLWT46bi6LOyZLCszHKMGo1dobo0kickqjtmnuvOINDkNb684kSQKuIBLvo1ju0eFXS2Sezdt2kO9xJsv7YrkUHko3J0UCsc_oOI6Uxbc9Ik2XoZpth75BrnP0mmQsKn4tGqRLJT3gqe2ZcdAFCKM1ULUyEwsdrfqR9SzuvWvWBJBtggv7XXhoimCHmKXYNQxsvUNcSKxQqcKvxllLYRH5oy-uPYuhMCv0_Ts1Qat1b18BikJeW7UTNVx71FfHiclkzClXo55j5Qv0KPczrUf_c2BxoxQaoiIky2fZGpICiS_lDHG761vWJXNTIRNktCWvmM-A-5AyRKZe44EjSo1yme5M5yIdg_ExT3_NKAQlN0NvRiD0AdM3HG7DQ1lYkii_Shwi4tBTWOWzzMDJDKTsFRaKinQN66LnjVnr6MEJztTjD8jLKATS7xyUX2foHcwHU6_xIKgC7tEtergxl6zgJI-eV42ac685A0foUMjXXU83JUyG0UvFAo9MqTQRvHxEwI7L0U=w1920-h925"
+        },
+        {
+            "nome" : "I3 Humilde",
+            "descricao" : "um I3 Humilde",
+            "preco" : "2300.30",
+            "imagem" : "https://lh3.googleusercontent.com/vqEA_SKx1HmAqcKXQKt3Oz-q67OXZ2_kDIMM49S_yk_fidh9PjeOhmKiCKR2ToIBIg9SDipyKIwgnOQXmtDeXRA8S8E2krjcVU-V3VojYTlgxWCB0HzdsNmjvh2PewCjadjiP4PyGl1qhdjkG3mSo8oHVcyrduodtSB0zMk3AdWUJ2NDjLs3GmY1lB1M1Y0RxNV8w5lqieWd_pniBl8KT5SjPyibG1SR9v2vEO7XH-skluo3QKlfEqXUGMALSlq31fccvfpcPeHuKcpfeBXu4GMLqASTnWrEunLSPNbyo_zbPq7-J0-s7ri7iEkbC6SG2W1uTkXtkgx6g-qxXGVrElXv7D2s6Yhml78KyTfPotZPw0KtNvdTzViPwMXZR1aoe2TkjkATyVWCaz7qY8u7OdF6rjpmixIawUHMA18DuYNwsBcPrItqmCgfac3Cvx8STVWTFWOeOKukNgPReh3f0ILrjPTDb7ct9r96Sllcnf6VRN2gT8jSV92lFa6JGq1TFcJN1U85LamDF2TstDjWfKpdUaUkkSoPaIpDp-Fuv6_vWohXEp9ALI7wQTe8Fnc_=w3000-h5331"
+        },
+        {
+            "nome" : "MacBook Air 13º",
+            "descricao" : "um mac bomzinho",
+            "preco" : "5699.00",
+            "imagem" : "https://lh3.googleusercontent.com/WnNOCWnALafcEIi_hQkPEZSm15MJeL5sMZ1zNfdgt9pavkqCuy-bt0evMcMH4N0Uqoz0SU5PvsKixBPGGn0ElnteS-j0jVa0A5DRGYXUib-JVX0GIX2j9oYr7WUl84YXAfHFTYAnhzlmdLRLZi-rkb17nSAWyxtCen4oj8aBUPaYDVRYRqrPLJ7fw2B4aaZW4vjRj4Ij-NjmF5wWSuZfUg4uyUt6aIEnKJ9R4NZk8vHgmRqGNsxQxegEq2vxkZa0XU8m6owKzAuzRNYJKlLOHu1wMTh41-np5ZJp0-GmV4g302kbwV4MxVWJ0hgPKX4G7o_WiZvg6bsi_r1uu6TuZP03aOGHLaTEBAQw3vt-JHLr0Ih1jFeL3yBdpinTJG24aNa3ipao0NGNXOgS--xvu9xWJzcraSgHPmlV-THGRm3-KoGuNU6t3B8L3BNTZS2LCb69x8Nd4akUd1xMw3odrNTs_R9fsdv7mxXu3mxGtDRKxwIDUXy70pVj5P6hwR7ObRema7s2Gr-iWHAWEJx_gARUiGIkptHYpY682ZtcwdNr48y_dlU8wUo4WyEwBwiR=w3000-h5331"
+        },
+        {
+            "nome" : "Notebook dell i7",
+            "descricao" : "Notebook top",
+            "preco" : "4500.00",
+            "imagem" : "https://lh3.googleusercontent.com/Y4VAa16E8PZOcdukub7Trr3cBU7bacB5AIj454a3cFBWEf9r-u0R-azjDlBOpmMC62OApmxP9u8ixq-SCL1rna-v9QbJnF2-s5tNkId-ZjWrnQTddDmByT3kgeIM02nTPFp8w-PQaItpymEIZSmLzBr7r6CdrAMbmV6CdMSWcd5d05IdUOy0KWeU5QvlNElpbaZZnh_LIoyptJTKlcz3VwQUVld8jUe-78cE_BvN39kK6Mbgo4p9XQegtST1nrurOWm8syTTp_caXqvtmZwoTeDa7KP-IrvtTJM-L75ujfFwxCIyNBddxejS6j2oaVlYa_tLlZ1wwcQP1XdwYco38b0MHP0B_PdRSFvaz2qiYCsdW6jcPkfGBFwKdZqkDck9XAqSiBmVEOhFDo4cTnqcKOhLfFwQDkUWyKjgLlz_pMU7C0hQ1XhlJGL-EoNNjpKi43n_5gkG5oMQwk0OlPlUtGdNF4cV0MxLRfdoYykpRiDGEc6cnx5_m3tqMONcyBUn_eyFTRR3nAl6bmFs24C0BOGRWL5Y6leuGdsxum0cCCqeOUcBuKXZqO3xU8QdO9rx=w1920-h925"
+        }
+    ]
+}
