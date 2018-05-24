@@ -1,10 +1,19 @@
-var mongoClient = require("mongodb").MongoClient;
-var resposta;
+var mongo = require("mongodb");
+
+var connMongoDB = function() {
+    console.log("inicio a conexao");
+    var db = new mongo.Db(
+        "ecommerce",
+        new mongo.Server(
+            "localhost",
+            27017,
+            {}
+        ),
+        {}
+    )
+    return db;
+}
+
 module.exports = function() {
-    mongoClient.connect("mongodb://localhost:27017")
-    .then(conn => resposta = conn.db("ecommerce"))
-    .catch(err => {
-        return "Impossivel conectar ao banco";
-    })
-    return resposta;
+    return connMongoDB;
 }

@@ -1,8 +1,9 @@
 var botao = document.querySelector("#finaliza");
-var validate = new ValidarCampos();
+var validar = new ValidarCampos();
 var boleano = false;
 botao.addEventListener('click', function(event) {
-    validate.validaCampos();
-    boleano = validate.nenhumErro();
+    validar.validaCampos();
+    boleano = validar.nenhumErro();
     if (!boleano) event.preventDefault();
 })
+

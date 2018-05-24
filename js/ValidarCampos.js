@@ -131,7 +131,6 @@ class ValidarCampos {
 
     enviaErros() {
         let valida = this.$('.erros');
-        console.log(erros.length);
         if (erros.length == 0) {
             nenhumErro = true;
             return;
