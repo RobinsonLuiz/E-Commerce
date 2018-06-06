@@ -6,9 +6,7 @@ class ComputadoresDAO {
     }
     
     listarComputadores(callback) {
-        this._dbConnection().collection("usuario").find({}).toArray(function(err,results) {
-            console.log(results);
-        })
+        this._dbConnection().collection("computadores").find({}).toArray(callback)
     }
 
     listarComputador(parametro, callback) {

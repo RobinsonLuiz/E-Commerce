@@ -4,7 +4,7 @@ var resposta;
 class RegistroDAO {
 
     constructor() {
-        this._dbConnection = require('../config/conexao');
+        this._dbConnection = require('../config/conexao')();
         this._mail = require('../config/mail');
     }
 
@@ -37,15 +37,12 @@ class RegistroDAO {
         })
     }
 
-    verificaCPF() {
-        this._dbConnection().collection("usuario").findOne({ email: { $in: [resposta.cpf] } }, function (err, results) {
-            if (results != null) error = true;
-            else error = false;
-        })
-    }
-
     erros() {
         return error;
+    }
+
+    set erro(erro) {
+        error = erro;
     }
 }
 

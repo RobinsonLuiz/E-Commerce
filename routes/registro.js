@@ -23,6 +23,6 @@ module.exports = function (servidor) {
                     resp.redirect("/html/registro/confirma");
                 }
             }, 2000)
-        })
+        }).catch(error => console.log("Erro não deu"))
     })
 }
