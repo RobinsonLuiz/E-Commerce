@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>WebTech Informática</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,9 +18,9 @@
 <body>
     <div class="container" id="start">
         <div class="jumbotron">
-            <h1>E-Commerce Tutorial</h1>
+            <h1>WebTech Informática</h1>
             <p>
-                <strong>E-Commerce </strong>com base no que foi aprendido nos cursos Alura</p>
+                <strong>WebTech Informática</strong> O melhor site para compras de hardware</p>
         </div>
     </div>
     <nav class="navbar navbar-inverse">
@@ -54,25 +55,34 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/html/carrinho">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Meu carrinho </a>
+                </li>
                 <% if (typeof usuarioLogin == 'object') {%>
                     <li>
                         <a href="/html/painel">
-                        <span class="glyphicon glyphicon-user"> <strong style="font-size: 15px"> <%usuarioLogin.nome%> </strong> </span> </a>
+                            <span class="glyphicon glyphicon-user">
+                                <%=usuarioLogin.nome%>
+                            </span>
+                        </a>
                     </li>
                     <li>
                         <a href="/html/logout">
-                            <span class="glyphicon glyphicon-log-in"></span> <strong> Sair </strong> </a>
+                            <span class="glyphicon glyphicon-log-in"></span>
+                            <strong> Sair </strong>
+                        </a>
                     </li>
-                <%} else {%>
-                    <li>
-                        <a href="/html/registro">
-                            <span class="glyphicon glyphicon-user"></span> Registrar-se</a>
-                    </li>
-                    <li>
-                        <a href="/html/login">
-                            <span class="glyphicon glyphicon-log-in"></span> Logar</a>
-                    </li>
-                <%}%>
+                    <%} else {%>
+                        <li>
+                            <a href="/html/registro">
+                                <span class="glyphicon glyphicon-user"></span> Registrar-se</a>
+                        </li>
+                        <li>
+                            <a href="/html/login">
+                                <span class="glyphicon glyphicon-log-in"></span> Logar</a>
+                        </li>
+                        <%}%>
             </ul>
         </div>
     </nav>
@@ -80,7 +90,7 @@
     <div class="container" style="text-align: center;height:600px;background: white">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <form>
+            <form method="POST" action="/html/login/confirma">
                 <div class="form-group">
                     <h1>
                         <strong> Faça seu login</strong>
@@ -97,17 +107,19 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="submit" class="form-control" id="ativar" value="Login">
+                    <input type="submit" class="form-control botao-alterado" id="ativar" value="Login">
                 </div>
                 <a href="/html/registro">
-                    <input type="button" style="margin-bottom: 4%" class="form-control" id="registrar" value="Registrar"> </a>
-                <a href="/html/registro/confirma"> <span id="esqueceu-senha"> Esqueceu a senha? </span> </a>
+                    <input type="button" class="form-control botao-alterado" id="registrar" value="Registrar"> </a>
+                <a href="/html/registro/confirma">
+                    <span id="esqueceu-senha"> Esqueceu a senha? </span>
+                </a>
             </form>
         </div>
         <div class="col-sm-3">
-                <div class="erros" style="margin-top: 35%">
-                </div>
-    </div>
+            <div class="erros" style="margin-top: 35%">
+            </div>
+        </div>
     </div>
 
     <footer class>
@@ -118,7 +130,7 @@
                         <h3> Informações </h3>
                         <ul>
                             <li>
-                                <a href="#"> Sobre</a>
+                                <a href="/sobrenos"> Sobre</a>
                             </li>
                             <li>
                                 <a href="#"> Contate-Nos </a>
@@ -137,7 +149,7 @@
                             <li>
                                 <div class="input-append newsletter-box text-center">
                                     <input type="text" class="full text-center" placeholder="Email">
-                                    <button class="btn  bg-gray" type="button" id="recebernovidades"> Receber NewsLetter
+                                    <button class="btn  bg-gray botao-newsletter" type="button" id="recebernovidades"> Receber NewsLetter
                                         <i class="fa fa-long-arrow-right"> </i>
                                     </button>
                                 </div>
@@ -194,4 +206,5 @@
 </body>
 <script src="../../js/ValidarCampos.js"></script>
 <script src="../../js/login.js"></script>
+
 </html>

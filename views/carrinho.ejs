@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>E-Commerce da Myreli</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/response.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/carrinho.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <header>
+        <span id="header-simulado">WebTech </span>
+        <div class="minhaConta">Minha Conta
+            <span class="conteudo-conta">Robinson Luiz Robinsontads@outlook.com</span>
+        </div>
+    </header>
+    <main class="begin">
+        <div class="container">
+            <p id="carrinho">Carrinho
+                <a href="./cpu">
+                    <h4 id="voltarSite"> Voltar ao site > </h4>
+                </a>
+            </p>
+        </div>
+        <section class="content-type">
+            <table class="finalizartotal">
+                <tr>
+                    <th>SubTotal
+                        <div class="aparecerNaTela-1">
+                            <span class="subtotal-1"> R$ 129,90 </span>
+                            <select id="numerodevezes" name="numerodevezes">
+                                <option>1x</option>
+                                <option>2x</option>
+                                <option>3x</option>
+                                <option>4x</option>
+                                <option>5x</option>
+                                <option>6x</option>
+                                <option>7x</option>
+                            </select>
+                            <span class="subtotal-2"> 1x de R$ 398,00 </span>
+                            <span class="subtotal-3"> sem juros </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="diasEntrega">
+                    <th>
+                        Frete
+                        <span class="freteTotal">
+                            <input class="input-frete" type="text" placeholder="Insira seu CEP" />
+                            <button class="w3-button w3-black w3-border botao-ok">OK</button>
+                        </span>
+                        <div class="enderecoCep desaparece">
+                            <b>
+                                <span class="enderecoRua"> Rua: </span>
+                            </b>
+                            <br>
+                            <b>
+                                <span class="enderecoBairro"> Bairro: </span>
+                            </b>
+                            <br>
+                            <b>
+                                <span class="enderecoCidade"> Cidade: </span>
+                            </b>
+                        </div>
+                        <div class="aparecerNaTela-2 desaparece">
+                            <span class="subtotal-4">
+                                <div class="totalcep">
+                                    <a href="" id="editar"> editar - </a>
+                                    <span class="cep"> 96200-000</span>
+                                    <p id="formaEntrega">
+                                        Normal - R$ 0,00 </p>
+                                </div>
+                            </span>
+                            <span class="subtotal-5"> 3 a 7 dias úteis </span>
+                        </div>
+                    </th>
+
+                </tr>
+                <tr>
+                    <th>Total
+                        <div class="aparecerNaTela-3">
+                            <span class="total-1"> R$ 129,90 </span>
+                            <select id="numerodevezes-total" name="numerodevezes">
+                                <option>1x</option>
+                                <option>2x</option>
+                                <option>3x</option>
+                                <option>4x</option>
+                                <option>5x</option>
+                                <option>6x</option>
+                                <option>7x</option>
+                            </select>
+                            <span class="total-2"> 1x de R$ 0,00 </span>
+                            <span class="total-3"> sem juros </span>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="../finalizarCompra">
+                            <button class="w3-button w3-black w3-border botao-finalizarCompra">Finalizar Compra</button>
+                        </a>
+                    </th>
+                </tr>
+            </table>
+        </section>
+        <section class="content">
+            <table class="tabela-produtos">
+                <tr>
+                    <th id="cabecalho">Produto</th>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <p id="levetambem"> Leve também</p>
+            <div class="container-cards">
+            </div>
+        </section>
+    </main>
+    <footer class>
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <h3> Informações </h3>
+                        <ul>
+                            <li>
+                                <a href="/sobrenos"> Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#"> Contate-Nos </a>
+                            </li>
+                            <li>
+                                <a href="#"> Seja Nosso Parceiro </a>
+                            </li>
+                            <li>
+                                <a href="#"> Trabalhe Conosco </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 id="novidades"> Novidades </h3>
+                        <ul>
+                            <li>
+                                <div class="input-append newsletter-box text-center">
+                                    <input type="text" class="full text-center" placeholder="Email">
+                                    <button class="btn  bg-gray botao-newsletter" type="button" id="recebernovidades"> Receber NewsLetter
+                                        <i class="fa fa-long-arrow-right"> </i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/robinson.luiz.988" target="_blank">
+                                    <i class=" fa fa-facebook">   </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/RobinsonCosta_" target="_blank">
+                                    <i class="fa fa-twitter">   </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/118417461892179056468?hl=pt-BR" target="_blank">
+                                    <i class="fa fa-google-plus">   </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=WtE011iVx1Q&list=RDWtE011iVx1Q&start_radio=1 " target="_blank">
+                                    <i class="fa fa-youtube">   </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="pull-left"> Copyright © Alura E-commerce 2018. All right reserved. </p>
+                <div class="pull-right">
+                    <ul class="nav nav-pills payments">
+                        <li>
+                            <i class="fa fa-cc-visa"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-cc-mastercard"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-cc-amex"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-cc-paypal"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../../js/atualizaValor.js"></script>
+<script src="../../js/numeroDeParcelas.js"></script>
+<script src="../../js/atualizaQuantidades.js"></script>
+<script src="../../js/addElementCarrinho.js"></script>
+<script src="../../js/criaElementoDeletado.js"></script>
+<script src="../../js/addTotal.js"></script>
+<script src="../../js/carrinho.js"></script>
+
+</html>

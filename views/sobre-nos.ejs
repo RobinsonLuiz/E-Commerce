@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>WebTech Informática</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -25,9 +26,9 @@
 <body>
     <div class="container" id="start">
         <div class="jumbotron">
-            <h1>E-Commerce Tutorial</h1>
+            <h1>WebTech Informática</h1>
             <p>
-                <strong>E-Commerce </strong>com base no que foi aprendido nos cursos Alura</p>
+                <strong>WebTech Informática</strong> O melhor site para compras de hardware</p>
         </div>
     </div>
     <nav class="navbar navbar-inverse">
@@ -63,6 +64,10 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
+                    <a href="/html/carrinho">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Meu carrinho </a>
+                </li>
+                <li>
                     <a href="/html/registro">
                         <span class="glyphicon glyphicon-user"></span> Registrar-se</a>
                 </li>
@@ -89,11 +94,15 @@
         </div>
         <div class="col-sm-4">
             <div class="col-sm-8" style="margin-left:-10%;margin-top:10%">
-                <strong style="color:brown"><p>Onde estamos?</p>
-                <p>Cidade : Rio Grande</p>
-                <p>Estado : Rio Grande do Sul</p>
-                <p>Endereço: Rua Umberto Ibrahim de Farias, Nº 325</p>
-                <h3><p>Você pode também ver o local da loja fisica através do Mapa abaixo:</p></h3></strong>
+                <strong style="color:brown">
+                    <p>Onde estamos?</p>
+                    <p>Cidade : Rio Grande</p>
+                    <p>Estado : Rio Grande do Sul</p>
+                    <p>Endereço: Rua Umberto Ibrahim de Farias, Nº 325</p>
+                    <h3>
+                        <p>Você pode também ver o local da loja fisica através do Mapa abaixo:</p>
+                    </h3>
+                </strong>
             </div>
             <div id="map"></div>
         </div>
@@ -125,7 +134,7 @@
                         <li>
                             <div class="input-append newsletter-box text-center">
                                 <input type="text" class="full text-center" placeholder="Email">
-                                <button class="btn  bg-gray" type="button" id="recebernovidades"> Receber NewsLetter
+                                <button class="btn  bg-gray botao-newsletter" type="button" id="recebernovidades"> Receber NewsLetter
                                     <i class="fa fa-long-arrow-right"> </i>
                                 </button>
                             </div>

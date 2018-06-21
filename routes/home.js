@@ -1,3 +1,4 @@
+global.logarUsuario;
 module.exports = function(servidor) {
     
     servidor.get("/html", function(req,resp) {

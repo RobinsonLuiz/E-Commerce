@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>WebTech Informática</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,9 +18,9 @@
 <body>
     <div class="container" id="start">
         <div class="jumbotron">
-            <h1>E-Commerce Tutorial</h1>
+            <h1>WebTech Informática</h1>
             <p>
-                <strong>E-Commerce </strong>com base no que foi aprendido nos cursos Alura</p>
+                <strong>WebTech Informática</strong> O melhor site para compras de hardware</p>
         </div>
     </div>
     <nav class="navbar navbar-inverse">
@@ -55,34 +56,61 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="/html/registro">
-                        <span class="glyphicon glyphicon-user"></span> Registrar-se</a>
+                    <a href="/html/carrinho">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Meu carrinho </a>
                 </li>
-                <li>
-                    <a href="/html/login">
-                        <span class="glyphicon glyphicon-log-in"></span> Logar</a>
-                </li>
+                <% if (typeof usuarioLogin == 'object') {%>
+                    <li>
+                        <a href="/html/painel">
+                            <span class="glyphicon glyphicon-user">
+                                <%=usuarioLogin.nome%>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/html/logout">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                            <strong> Sair </strong>
+                        </a>
+                    </li>
+                    <%} else {%>
+                        <li>
+                            <a href="/html/registro">
+                                <span class="glyphicon glyphicon-user"></span> Registrar-se</a>
+                        </li>
+                        <li>
+                            <a href="/html/login">
+                                <span class="glyphicon glyphicon-log-in"></span> Logar</a>
+                        </li>
+                        <%}%>
             </ul>
         </div>
     </nav>
 
-    <div class="container-fluid text-center" >
+    <div class="container-fluid text-center">
         <div class="col-sm-2"></div>
         <div class="col-sm-8" id="cpuid">
-            <div class="card-deck" style="margin-top: 5%">
-                    <%for(var i = 0;i<lista.length;i++) {%>
-                <div class="col-md-3 col-sm-4">
-                    <div class="card">
-                        <a href="/html/computador/<%=lista[i]._id%>" class="imagem"><img class="card-img-top" src="<%=lista[i].imagem%>" alt="60x130" style="height: 200px; width: 100%; display: block;"> </a> 
-                        <div class="card-body">
-                            <h3 class="card-title"><%=lista[i].nome%></h3>
-                            <h3 class="card-text"><%=lista[i].descricao%></h3>
-                            <h3 id="preco" class="card-text"><%=lista[i].preco%></h3>
-                            <a href="/html/computador/<%=lista[i]._id%>" class="card-link" style="border: 1px solid"> Ver mais... </a>
+            <div class="card-deck">
+                <%for(var i = 0;i<lista.length;i++) {%>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="card">
+                            <a href="/html/computador/<%=lista[i].id%>" class="imagem">
+                                <img class="card-img-top" src="<%=lista[i].imagem%>" alt="60x130" style="height: 200px; width: 100%; display: block;"> </a>
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <%=lista[i].nome%>
+                                </h3>
+                                <h3 class="card-text">
+                                    <%=lista[i].descricao%>
+                                </h3>
+                                <h3 id="preco" class="card-text">
+                                    <%=lista[i].preco%>
+                                </h3>
+                                <a href="/html/computador/<%=lista[i].id%>" class="card-link"> Ver mais... </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <%}%>
+                    <%}%>
             </div>
         </div>
     </div>
@@ -95,7 +123,7 @@
                         <h3> Informações </h3>
                         <ul>
                             <li>
-                                <a href="#"> Sobre</a>
+                                <a href="/sobrenos"> Sobre</a>
                             </li>
                             <li>
                                 <a href="#"> Contate-Nos </a>
@@ -114,7 +142,7 @@
                             <li>
                                 <div class="input-append newsletter-box text-center">
                                     <input type="text" class="full text-center" placeholder="Email">
-                                    <button class="btn  bg-gray" type="button" id="recebernovidades"> Receber NewsLetter
+                                    <button class="btn  bg-gray botao-newsletter" type="button" id="recebernovidades"> Receber NewsLetter
                                         <i class="fa fa-long-arrow-right"> </i>
                                     </button>
                                 </div>
@@ -169,4 +197,5 @@
         </div>
     </footer>
 </body>
+
 </html>

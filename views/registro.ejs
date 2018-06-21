@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>WebTech Informática</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,9 +18,9 @@
 <body>
     <div class="container" id="start">
         <div class="jumbotron">
-            <h1>E-Commerce Tutorial</h1>
+            <h1>WebTech Informática</h1>
             <p>
-                <strong>E-Commerce </strong>com base no que foi aprendido nos cursos Alura</p>
+                <strong>WebTech Informática</strong> O melhor site para compras de hardware</p>
         </div>
     </div>
     <nav class="navbar navbar-inverse">
@@ -55,6 +56,10 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
+                    <a href="/html/carrinho">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Meu carrinho </a>
+                </li>
+                <li>
                     <a href="/html/registro">
                         <span class="glyphicon glyphicon-user"></span> Registrar-se</a>
                 </li>
@@ -75,11 +80,6 @@
                     <input type="text" class="form-control" id="nome" name="nome">
                 </div>
 
-                <div class="form-group">
-                    <label for="idade">Idade</label>
-                    <input type="number" class="form-control" id="idade" name="idade">
-                </div>
-
                 <div class="datanascimento"></div>
                 <label for="date">Data de Nascimento</label>
                 <input type="date" class="form-control" id="datanascimento" name="datanascimento">
@@ -93,17 +93,17 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="cpf">CPF</label>
-                    <input type="text" class="form-control" placeholder="Ex.: 000.000.000-00" id="cpf" name="cpf">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="password" name="password">
                 </div>
 
                 <div class="form-group">
-                    <label for="tel">Telefone</label>
-                    <input type="text" class="form-control" placeholder="Ex.:(53) 90000-0000" id="telefone" name="telefone">
+                    <label for="csenha">Confirma Senha</label>
+                    <input type="password" class="form-control" id="cpassword" name="cpassword">
                 </div>
 
                 <div class="form-group">
-                    <input type="submit" class="form-control" id="finaliza" value="Finalizar Cadastro">
+                    <input type="submit" class="form-control botao-alterado" id="finaliza" value="Finalizar Cadastro">
                 </div>
             </form>
         </div>
@@ -113,7 +113,7 @@
                     <div class="alert alert-danger">
                         E-mail Já Cadastrado, por favor utilize outro E-mail
                     </div>
-                <%}%>
+                    <%}%>
             </div>
         </div>
         <div class="col-sm-3" id="cadastrado">
@@ -132,7 +132,7 @@
                 <input type="password" class="form-control" id="senhaCadastrado" name="senhaCadastrado">
             </div>
             <div class="form-group">
-                <input type="submit" class="form-control" id="logar" value="Realizar login">
+                <input type="submit" class="form-control botao-alterado" id="logar" value="Realizar login">
             </div>
         </div>
     </div>
@@ -145,7 +145,7 @@
                         <h3> Informações </h3>
                         <ul>
                             <li>
-                                <a href="#"> Sobre</a>
+                                <a href="/sobrenos"> Sobre</a>
                             </li>
                             <li>
                                 <a href="#"> Contate-Nos </a>
@@ -164,7 +164,7 @@
                             <li>
                                 <div class="input-append newsletter-box text-center">
                                     <input type="text" class="full text-center" placeholder="Email">
-                                    <button class="btn  bg-gray" type="button" id="recebernovidades"> Receber NewsLetter
+                                    <button class="btn  bg-gray botao-newsletter" type="button" id="recebernovidades"> Receber NewsLetter
                                         <i class="fa fa-long-arrow-right"> </i>
                                     </button>
                                 </div>
@@ -222,4 +222,5 @@
 <script src="../js/ValidarCampos.js"></script>
 <script src="../js/registro.js"></script>
 </script>
+
 </html>

@@ -10,9 +10,33 @@
     text-align: center;
     background: darkcyan;
 }
-
-
-
+.botao-newsletter {
+    background-color: lightgray;
+    width: 100%;
+}
+.botao-newsletter:hover {
+    background-color: paleturquoise;
+}
+.botao-alterado:hover {
+    background-color: paleturquoise;
+    color: black;
+}
+.card-deck {
+    margin-top: 5%
+}
+.card {
+    margin-bottom: 12%;
+}
+.botao-alterado {
+    margin-bottom: 4%;
+    background-color: darkslateblue;
+    color: white;
+    width: 60%;
+    margin-left: 19%;
+}
+#construcao {
+    font-size: 90px;
+}
 #preco {
     color: darkgreen
 }

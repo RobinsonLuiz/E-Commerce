@@ -2,7 +2,7 @@ let erros = [];
 let res = [];
 let nenhumErro = true;
 class ValidarCampos {
-    
+
     constructor() {
         this.$ = document.querySelector.bind(document);
     }
@@ -12,23 +12,21 @@ class ValidarCampos {
         tempo.textContent = "";
         erros = [];
         this.validaNome();
-        this.validaIdade();
         this.validaData();
         this.validaEmail();
-        this.validaCpf();
-        this.validaTelefone();
+        this.validaSenha();
         this.enviaErros();
     }
 
     validaNome() {
         let valida = this.$('#nome');
-        if (valida.value) {     
+        if (valida.value) {
             var contaVazio = 0;
             var contaPalavra = 0;
             var resposta = valida.value.toLowerCase();
-            for(var i = 0; i < valida.value.length;i++) {
-            if (valida.value.charAt(i) == " ") contaVazio++;
-            if (valida.value.charAt(i) >= 'a' && valida.value.charAt(i) <= 'z') contaPalavra++;
+            for (var i = 0; i < valida.value.length; i++) {
+                if (valida.value.charAt(i) == " ") contaVazio++;
+                if (valida.value.charAt(i) >= 'a' && valida.value.charAt(i) <= 'z') contaPalavra++;
             }
             if (contaPalavra < 10) {
                 valida.classList.remove('correto');
@@ -38,7 +36,7 @@ class ValidarCampos {
             } else {
                 valida.classList.add('correto');
                 valida.classList.remove('errado');
-            }      
+            }
         } else {
             valida.classList.add('errado');
             valida.classList.remove('correto');
@@ -47,18 +45,6 @@ class ValidarCampos {
         }
     }
 
-    validaIdade() {
-        let valida = this.$('#idade');
-        if ((valida.value < 5) || (valida.value > 120)) {
-            valida.classList.remove('correto');
-            valida.classList.add('errado');
-            valida.focus();
-            this.adicionaErros("Por favor seleciona uma idade que seja superior a 5 anos", 2);
-        } else {
-            valida.classList.add('correto');
-            valida.classList.remove('errado');
-        }
-    }
 
     validaData() {
         let valida = this.$('#datanascimento');
@@ -84,9 +70,9 @@ class ValidarCampos {
             }
         } else {
             valida.classList.remove('correto');
-            valida.classList.add('errado');  
+            valida.classList.add('errado');
             valida.focus();
-            this.adicionaErros("Por favor selecione uma data válida", 3);    
+            this.adicionaErros("Por favor selecione uma data válida", 3);
         }
     }
 
@@ -103,29 +89,24 @@ class ValidarCampos {
         }
     }
 
-    validaCpf() {
-        let valida = this.$('#cpf');
-        if (!valida.value.match(/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/)) {
-            valida.classList.remove('correto');
-            valida.classList.add('errado');
-            valida.focus();
-            this.adicionaErros("Por favor selecione um CPF válido (Ex: 000.000.000-00)", 5);
+    validaSenha() {
+        let senha = this.$('#password');
+        let csenha = this.$('#cpassword');
+        if (senha.value && csenha.value) {
+            if (senha.value != csenha.value) {
+                senha.classList.remove('correto');
+                senha.classList.add('errado');
+                senha.focus();
+                this.adicionaErros('Senha não correspondem', 5);
+            } else {
+                senha.classList.add('correto');
+                senha.classList.remove('errado');
+            }
         } else {
-            valida.classList.add('correto');
-            valida.classList.remove('errado');
-        }
-    }
-
-    validaTelefone() {
-        let valida = this.$('#telefone');
-        if (!valida.value.match(/^\d{2}\ \9\d{8}/)) {
-            valida.classList.remove('correto');
-            valida.classList.add('errado');
-            valida.focus();
-                this.adicionaErros("Por favor selecione um telefone válido (Ex: 53 900000000)", 6);
-        } else {
-            valida.classList.add('correto');
-            valida.classList.remove('errado');
+            this.adicionaErros('Senha não correspondem', 5);
+            senha.classList.remove('correto');
+            senha.classList.add('errado');
+            senha.focus();
         }
     }
 
@@ -148,13 +129,17 @@ class ValidarCampos {
         for (var i = 0; i < erros.length; i++) {
             if (erros[i].id == id) return;
             else {
-                erros.push({id: id,
-                name: string});
+                erros.push({
+                    id: id,
+                    name: string
+                });
                 return;
             }
         }
-        erros.push({id: id,
-            name: string});
+        erros.push({
+            id: id,
+            name: string
+        });
         nenhumErro = false;
     }
 

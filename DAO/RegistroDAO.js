@@ -27,12 +27,15 @@ class RegistroDAO {
             if (err) console.log(err);
             else console.log("Mensagem enviada com sucesso");
         });
-        this._dbConnection().collection("usuario").insert(resposta);
+        var insert = [resposta.nome,resposta.datanascimento,resposta.email,resposta.password,resposta.token,resposta.ativado];
+        this._dbConnection.query("insert into usuario (nome,datanascimento,email,senha,token,ativado) VALUES (?,?,?,?,?,?) ", insert, function(err,res) {
+            console.log(err);
+        });
     }
 
     verificaEmail() {
-        this._dbConnection().collection("usuario").findOne({ email: { $in: [resposta.email] } }, function (err, results) {
-            if (results != null) error = true;
+        this._dbConnection.query("select * from usuario where email = ?", resposta.email, function (err, results) {
+            if (results.length > 0) error = true;
             else error = false;
         })
     }

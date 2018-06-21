@@ -1,13 +1,12 @@
-var mongo = require("mongodb").MongoClient;
-var resposta;
-var connMongoDB = function() {
-    console.log("inicio a conexao");
-    mongo.connect("mongodb://localhost:27017/")
-    .then(conn => resposta = conn.db("ecommerce"))
-    .catch(error => resposta = error)
-    return resposta;
-}
+var mysql = require("mysql");
+var connection = mysql.createPool({
+    host: 'mysql427.umbler.com',
+    port: '41890',
+    user: 'robinsonluiz',
+    password: '325140aa',
+    database: 'webtechinfo'
+});
 
-module.exports = function() {
-    return connMongoDB;
+module.exports = function () {
+    return connection;
 }

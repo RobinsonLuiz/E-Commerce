@@ -2,11 +2,16 @@ var RegistroDAO = require('../DAO/RegistroDAO.js');
 module.exports = function (servidor) {
 
     servidor.get("/html/registro", function (req, resp) {
-        resp.render("registro", { success: false, email: false });
+        console.log(global.logarUsuario);
+        if (global.logarUsuario == undefined || global.logarUsuario == '') {
+            resp.render("registro", { success: false, email: false });
+        } else resp.send('construção');
     })
 
     servidor.get("/html/registro/confirma", function (req, resp) {
-        resp.render("confirma", { success: true });
+        if (!typeof global.logarUsuario == 'object') {
+            resp.render("confirma", { success: true });
+        } else resp.send('construção');
     })
 
     servidor.post("/html/registro", function (req, resp) {

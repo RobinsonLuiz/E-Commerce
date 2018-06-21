@@ -12,13 +12,12 @@
 #recebernovidades {
     color: darkcyan;
 }
+
 #novidades {
     text-align: center;
 }
 
-.col-sm-3 .form-group input {
-	color: red;
-}
+
 
 .datanascimento {
 	margin: 5%;
@@ -81,7 +80,6 @@
 	display: inline-block;
 	height: 30px;
 	clear: both;
-	width: 100%;
 }
 
 .newsletter-box .btn {
@@ -94,7 +92,6 @@
 	display: inline-block;
 	height: 40px;
 	padding: 0;
-	width: 100%;
 	color: #fff;
 }
 
@@ -126,15 +123,13 @@
 	-moz-transition: all 0.5s ease 0s;
 	-webkit-transition: all 0.5s ease 0s;
 	-ms-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
 }
 
 .social li:hover {
-	transform: scale(1.15) rotate(720deg);
-	-webkit-transform: scale(1.1) rotate(720deg);
-	-moz-transform: scale(1.1) rotate(720deg);
-	-ms-transform: scale(1.1) rotate(720deg);
-	-o-transform: scale(1.1) rotate(720deg);
+	transform: scale(1.5) rotate(720deg);
+	-webkit-transform: scale(1.5) rotate(720deg);
+	-moz-transform: scale(1.5) rotate(720deg);
+	-ms-transform: scale(1.5) rotate(720deg);
 }
 
 .social li a {
@@ -156,8 +151,6 @@
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-
-
 
 .payments {
 	font-size: 1.5em;	

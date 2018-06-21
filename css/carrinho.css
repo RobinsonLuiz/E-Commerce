@@ -1,0 +1,261 @@
+.begin {
+    margin-left: 1%;
+    max-width: 1920px;
+}
+
+.tabela-produtos {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 62vw;
+    margin-top: -18vw;
+}
+
+img {
+    max-width: 100%;
+}
+.finalizartotal {
+    width: 35vw;
+    margin-left: 63vw;
+    margin-top: -5vw;
+    position: relative;
+    border: 1px white;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1.5vw;
+}
+
+.finalizartotal th {
+    padding: 1.5vw;
+    background-color: whitesmoke
+}
+.perfumes {
+    padding: 1.8vw;
+    font-size: 1.2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao-ok {
+    margin-left:-1.2vw;
+    margin-top:-0.2vw;
+    height: 97%;
+}
+td #logos {
+    padding:1.3%;
+    margin-top: -3.5%;
+    margin-left:-2%;
+}
+.orgProduto {
+    display: grid;
+    width: 18vw;
+    margin-left: 11%;
+    margin-top: -9%;
+    margin-bottom: -4%;
+}
+
+.desaparece {
+    display: none;
+}
+
+.aparece {
+    text-align: right;
+    margin-top: -4%;
+}
+
+.totalcep {
+    margin-top: -10%;
+}
+
+.input-frete {
+    height:2.62rem;
+    width:10vw;
+    margin-left: 11%
+}
+header {
+    margin-left : 1%;
+}
+.infos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 12.5%;
+    margin-top:-11%;
+    font-size: 0.7vw;
+    color: gray;
+}
+
+.aparecerNaTela-3 {
+    margin-top: -6%;
+    margin-left: 78%;
+    display: grid;
+}
+
+.valorProduto {
+    margin-left: 12%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkcyan;
+    font-size: 1.0vw;
+}
+.valor {
+    color: grey;
+}
+.container-cards {
+    width: 60vw;
+    border-collapse: collapse;
+}
+.container ul a:hover {
+    color: aqua;
+}
+.card {
+    display: inline-block;
+    position: relative;
+}
+
+#levetambem {
+    font-size: 1.1vw;
+    padding: 1.5vw;
+}
+
+#carrinho {
+    font-size: 1.2vw;
+    border-collapse: separate;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: -31.5%;
+    margin-top: 2%;
+}
+
+#header-simulado {
+    font-size: 1.5vw;
+}
+
+.card-deck {
+    padding: 1.3vw;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+}
+
+#voltarSite {
+    font-size: 1.0vw;
+    margin-left: 60%;
+    margin-top: -40px;
+    border: 1px;
+}
+
+#voltarSite:hover {
+    color: blue;
+}
+
+.aparecerNaTela-1 {
+    margin-top: -6%;
+    margin-left: 25vw;
+    display: grid;
+}
+
+.enderecoCep {
+    font-weight: bold;
+    margin-left: 18%;
+    margin-top: -7%;
+
+}
+.subtotal-1 {
+    font-size: 1.0vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: slategray
+}
+
+.subtotal-2 {
+    color:lightgrey;
+    font-size: 0.7vw;
+}
+
+.subtotal-3 {
+    color:lightslategray;
+    font-size: 0.6vw;
+}
+
+.total-1 {
+    font-size: 1.0vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: slategray
+}
+
+.total-2 {
+    color:lightgrey;
+    font-size: 0.7vw;
+}
+
+.total-3 {
+    color:lightslategray;
+    font-size: 0.6vw;
+}
+
+.subtotal-4 {
+    font-size: 0.6vw;
+    margin-left: 13%;
+    margin-top: -0.2%
+}
+
+.card {
+    text-align: center
+}
+
+.aparecerNaTela-2 {
+    margin-top: -10%;
+    margin-left: 56%;
+}
+
+.pull-left {
+    text-align: center;
+}
+
+.subtotal-5 {
+    font-size: 0.6vw;
+    margin-left: 13%;
+    margin-top: 2%
+}
+
+
+.botao-finalizarCompra {
+    height:100%;
+    width:100%
+}
+
+#inputCompra {
+    width: 4%;
+    height: 4%;
+    margin-left: 52%;
+}
+
+#correcaoAltura {
+    margin-top:-2%;
+    margin-left: 13%;
+}
+
+.minhaConta {
+    margin-top: -1.8%;
+    margin-left: 56%;
+    font-size: 1.0vw;
+}
+
+.minhaConta .conteudo-conta {
+    visibility: hidden;
+    font-size: 1vw;
+    padding: 2%;
+    width: 350px;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.minhaConta:hover .conteudo-conta {
+    visibility: visible;
+}
