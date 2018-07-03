@@ -21,9 +21,27 @@
     background-color: paleturquoise;
     color: black;
 }
+
 .card-deck {
     margin-top: 5%
 }
+.mapper {
+    margin-left:-5%;
+    margin-top:10%
+}
+
+.imagensprogramacao img {
+    max-width: 100%;
+    width: 200px;
+    margin-top: 8%;
+    position: relative;
+}
+
+#map {
+    height: 250px;
+    width: 100%;
+}
+
 .card {
     margin-bottom: 12%;
 }

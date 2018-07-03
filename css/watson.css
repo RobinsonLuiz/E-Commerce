@@ -1,0 +1,198 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    max-width: 1920px;
+}
+
+.disable {
+    display: none;
+}
+
+.watsonview {
+    position: relative;
+    min-width: 600px;
+}
+
+div {
+    word-wrap: break-word;
+    line-height: 1.25rem;
+}
+
+#status {
+    margin-top: -40px;
+    margin-left: 4px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.watson-alterado {
+    zoom: 250%;
+    right: 0.5%;
+    margin-top: -15px;
+    position: fixed;
+}
+
+.watson-alterado2 {
+    zoom: 200%;
+    right: 1.5%;
+    margin-top: 3px;
+    position: fixed;
+}
+
+.chat-column {
+    height: 40%;
+    padding: 0.9375rem 0 0.625rem 0;
+    margin: auto;
+    text-align: left;
+    max-width: 25rem;
+    min-width: 9.375rem;
+}
+
+.watsonleft {
+    right: 0;
+    bottom: 0;
+    min-height: 310px;
+    z-index: 9999;
+    position: fixed;
+}
+
+#chat {
+    border: 1px solid powderblue;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: snow;
+    margin-left: -10%;
+    width: 25vh;
+    height: 25vh;
+}
+
+.message-inner {
+    opacity: 0;
+    opacity: 1;
+    margin-top: 0.9375rem;
+}
+
+.from-user {
+    text-align: right;
+}
+
+.from-user .message-inner {
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.015rem;
+    line-height: 1.3125rem;
+    background: #00B4A0;
+    border-radius: 1.25rem;
+    border-bottom-right-radius: 0;
+    text-align: left;
+    display: inline-block;
+    margin-left: 2.5rem;
+    min-width: 2.5rem;
+}
+
+.from-user .message-inner p {
+    margin: 0.3125rem;
+    padding: 0 0.9375rem;
+}
+
+.from-user .message-inner:before, .from-user .message-inner:after {
+    content: "";
+    position: absolute;
+}
+
+.from-user .message-inner:before {
+    z-index: -2;
+    bottom: -0.375rem;
+    right: 0;
+    height: 0.375rem;
+    width: 0.5rem;
+    background: #1cb3a0;
+}
+
+.from-user .message-inner:after {
+    z-index: -1;
+    bottom: -0.5rem;
+    right: 0;
+    height: 0.5rem;
+    width: 0.5rem;
+    background: #fff;
+    border-top-right-radius: 1.25rem;
+}
+
+.from-watson .message-inner {
+    position: relative;
+    border-radius: 1.5625rem;
+    font-size: 1rem;
+    color: #323232;
+    letter-spacing: 0.015rem;
+    line-height: 1.3125rem;
+}
+
+.modificaposicao {
+    position: relative;
+}
+
+.from-watson p {
+    margin: 0.3125rem;
+    padding: 0 1.25rem;
+}
+
+.from-watson p:before {
+    content: "";
+    background: #9855D4;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    left: 0.4375rem;
+    width: 0.3125rem;
+    height: 1.3125rem;
+    line-height: 1.3125rem;
+}
+
+#textInput {
+    
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #323232;
+    letter-spacing: 0.015rem;
+    line-height: 1.3125rem;
+    height: 2.5rem;
+    width: 100%;
+    padding-left: 0.125rem;
+    margin-bottom: -0.125rem;
+    overflow: auto;
+}
+
+.inputOutline {
+    display: block;
+    border-bottom: 0.05rem solid #aeaeae;
+    bottom: 0;
+    margin-right: 0.5rem;
+    right: 0;
+    width: 70%;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+    .chat-column {
+        padding-top: 4rem;
+    }
+}

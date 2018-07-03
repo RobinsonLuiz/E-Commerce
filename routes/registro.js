@@ -9,9 +9,7 @@ module.exports = function (servidor) {
     })
 
     servidor.get("/html/registro/confirma", function (req, resp) {
-        if (!typeof global.logarUsuario == 'object') {
-            resp.render("confirma", { success: true });
-        } else resp.send('construção');
+        resp.render("confirma", { success: true });
     })
 
     servidor.post("/html/registro", function (req, resp) {

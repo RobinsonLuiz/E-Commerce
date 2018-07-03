@@ -14,14 +14,15 @@
     "nodemailer": "^4.6.4",
     "nodemon": "^1.17.5",
     "uniq": "^1.0.1",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "watson-developer-cloud": "^3.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-preset-es2015": "^6.9.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index"
   },
   "author": "",
   "license": "ISC"

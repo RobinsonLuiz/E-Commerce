@@ -13,15 +13,8 @@
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/response.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/watson.css">
 </head>
-<style>
-    #map {
-        height: 200px;
-        width: 290px;
-        margin-top: 23%;
-        margin-bottom: -20%;
-    }
-</style>
 
 <body>
     <div class="container" id="start">
@@ -58,9 +51,6 @@
                 <li>
                     <a href="/html/monitor"> Monitores </a>
                 </li>
-                <li>
-                    <a href="/html/peri"> Periféricos </a>
-                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -78,22 +68,41 @@
             </ul>
         </div>
     </nav>
-
+    <div class="container-fluid watsonview text-center disable">
+        <div class="text-center watsonleft">
+            <div class="chat-column">
+                <a href="" class="watsonx watson-alterado">
+                    <i class=" fa fa-times-circle">   </i>
+                </a>
+                <div id="chat"></div>
+                <label for="textInput" class="inputOutline">
+                        <a href="" class="watsonx watson-alterado2">
+                                <i class=" fa fa-send">   </i>
+                            </a>
+                    <input id="textInput" class="input" autofocus placeholder="Digite algo" type="text"> 
+                </label>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid text-center">
-        <div class="col-sm-8" style="font-size: 35px;margin-top: 5%">
-            <p> É um site para treinamento dos cursos da alura envolvendo
+        <div class="col-sm-8" style="font-size: 20px;margin-top: 5%">
+            É um site para treinamento dos cursos da alura envolvendo
                 <strong>JavaScript</strong>
-            </p>
-            <p>
+        
                 <strong>HTML</strong>
                 <strong>CSS</strong>,
                 <strong>JavaScript OO e NodeJS</strong>, através do banco de dados
                 <strong>MongoDB</strong>
                 e mais algumas ferramentas pesquisadas.
-            </p>
+            <div class="imagensprogramacao">
+                <img src="../../imagens/github.png">
+                <img src="../../imagens/html-css.png">
+                <img src="../../imagens/js.png">
+                <img src="../../imagens/node-js.png">
+            </div>
         </div>
         <div class="col-sm-4">
-            <div class="col-sm-8" style="margin-left:-10%;margin-top:10%">
+            <div class="mapper">
                 <strong style="color:brown">
                     <p>Onde estamos?</p>
                     <p>Cidade : Rio Grande</p>
@@ -107,7 +116,6 @@
             <div id="map"></div>
         </div>
     </div>
-
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -128,7 +136,6 @@
                         </li>
                     </ul>
                 </div>
-                <div>
                     <h3 id="novidades"> Novidades </h3>
                     <ul>
                         <li>
@@ -157,8 +164,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=WtE011iVx1Q&list=RDWtE011iVx1Q&start_radio=1 " target="_blank">
-                                <i class="fa fa-youtube">   </i>
+                            <a href="" class="watsonbutton">
+                                <i class=" fa fa-comments">   </i>
+                                <img id="status" src="../../imagens/online.png">    
                             </a>
                         </li>
                     </ul>
@@ -192,5 +200,6 @@
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfY0seWtO6G54JmLyiwhs8PmNRyLKDwYU&callback=initMap">
 </script>
+<script src="../../js/watson.js"></script>
 
 </html>

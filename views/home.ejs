@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/response.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/watson.css">
 </head>
 
 <body>
@@ -50,9 +51,6 @@
                 <li>
                     <a href="/html/monitor"> Monitores </a>
                 </li>
-                <li>
-                    <a href="/html/peri"> Periféricos </a>
-                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -70,12 +68,22 @@
             </ul>
         </div>
     </nav>
-
-    <div class="container-fluid text-center">
-        <div class="col-sm-8 text-center">
+    <div class="container-fluid watsonview text-center disable">
+        <div class="text-center watsonleft">
+            <div class="chat-column">
+                <a href="" class="watsonx watson-alterado">
+                    <i class=" fa fa-times-circle">   </i>
+                </a>
+                <div id="chat"></div>
+                <label for="textInput" class="inputOutline">
+                        <a href="" class="watsonx watson-alterado2">
+                                <i class=" fa fa-send">   </i>
+                            </a>
+                    <input id="textInput" class="input" autofocus placeholder="Digite algo" type="text"> 
+                </label>
+            </div>
         </div>
     </div>
-
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -96,41 +104,40 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h3 id="novidades"> Novidades </h3>
-                    <ul>
-                        <li>
-                            <div class="input-append newsletter-box text-center">
-                                <input type="text" class="full text-center" placeholder="Email">
-                                <button class="btn  bg-gray botao-newsletter" type="button" id="recebernovidades"> Receber NewsLetter
-                                    <i class="fa fa-long-arrow-right"> </i>
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="social">
-                        <li>
-                            <a href="https://www.facebook.com/robinson.luiz.988" target="_blank">
-                                <i class=" fa fa-facebook">   </i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/RobinsonCosta_" target="_blank">
-                                <i class="fa fa-twitter">   </i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/118417461892179056468?hl=pt-BR" target="_blank">
-                                <i class="fa fa-google-plus">   </i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=WtE011iVx1Q&list=RDWtE011iVx1Q&start_radio=1 " target="_blank">
-                                <i class="fa fa-youtube">   </i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <h3 id="novidades"> Novidades </h3>
+                <ul>
+                    <li>
+                        <div class="input-append newsletter-box text-center">
+                            <input type="text" class="full text-center" placeholder="Email">
+                            <button class="btn  bg-gray botao-newsletter" type="button" id="recebernovidades"> Receber NewsLetter
+                                <i class="fa fa-long-arrow-right"> </i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="social">
+                    <li>
+                        <a href="https://www.facebook.com/robinson.luiz.988" target="_blank">
+                            <i class=" fa fa-facebook">   </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/RobinsonCosta_" target="_blank">
+                            <i class="fa fa-twitter">   </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/118417461892179056468?hl=pt-BR" target="_blank">
+                            <i class="fa fa-google-plus">   </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="watsonbutton">
+                            <i class=" fa fa-comments">   </i>
+                            <img id="status" src="../../imagens/online.png">    
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
@@ -156,5 +163,6 @@
         </div>
     </footer>
 </body>
+<script src="../../js/watson.js"></script>
 
 </html>

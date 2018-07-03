@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/response.css">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/watson.css">
 </head>
 
 <body>
@@ -49,9 +50,6 @@
                 </li>
                 <li>
                     <a href="/html/monitor"> Monitores </a>
-                </li>
-                <li>
-                    <a href="/html/peri"> Periféricos </a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -121,7 +119,22 @@
             </div>
         </div>
     </div>
-
+    <div class="container-fluid watsonview text-center disable">
+        <div class="text-center watsonleft">
+            <div class="chat-column">
+                <a href="" class="watsonx watson-alterado">
+                    <i class=" fa fa-times-circle">   </i>
+                </a>
+                <div id="chat"></div>
+                <label for="textInput" class="inputOutline">
+                        <a href="" class="watsonx watson-alterado2">
+                                <i class=" fa fa-send">   </i>
+                            </a>
+                    <input id="textInput" class="input" autofocus placeholder="Digite algo" type="text"> 
+                </label>
+            </div>
+        </div>
+    </div>
     <footer class>
         <div class="footer" id="footer">
             <div class="container">
@@ -172,8 +185,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/watch?v=WtE011iVx1Q&list=RDWtE011iVx1Q&start_radio=1 " target="_blank">
-                                    <i class="fa fa-youtube">   </i>
+                                <a href="" class="watsonbutton">
+                                    <i class=" fa fa-comments">   </i>
+                                    <img id="status" src="../../imagens/online.png">    
                                 </a>
                             </li>
                         </ul>
@@ -206,5 +220,5 @@
 </body>
 <script src="../../js/ValidarCampos.js"></script>
 <script src="../../js/login.js"></script>
-
+<script src="../../js/watson.js"></script>
 </html>
